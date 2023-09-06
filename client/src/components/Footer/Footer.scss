@@ -1,0 +1,190 @@
+.footer-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 150px 40px;
+
+  .footer {
+    align-self: flex-end;
+    margin: 0;
+
+    a {
+      margin: 0;
+      color: #fff;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    p {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 300;
+    }
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: start;
+    padding: 0 10px;
+  }
+
+  .we-in {
+
+
+    img:hover {
+      height: 55px;
+      width: 55px;
+      padding: 4px;
+
+    }
+
+    align-self: flex-end;
+    align-items: end;
+    text-align: end;
+
+
+    img {
+      align-items: center;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      padding: 7px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+//*********************************  MEDIA 1000PX   **************************************
+
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    padding: 200px 50px 40px;
+  }
+
+}
+
+
+//*********************************  MEDIA 768PX   **************************************
+
+@media (max-width: 768px) {
+  .footer-wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 20px 20px;
+    flex-wrap: wrap; // убрать после адоптации под телефон
+
+    .footer {
+      align-self: flex-end;
+      margin: 0;
+
+      a {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: 300;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: start;
+      padding: 0 10px;
+    }
+
+    .we-in {
+      align-self: flex-start;
+      align-items: center;
+      text-align: left;
+
+
+      img {
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        width: 60px;
+        padding: 7px;
+        cursor: pointer;
+      }
+
+      img:hover {
+        height: 65px;
+        width: 65px;
+        padding: 4px;
+      }
+    }
+  }
+}
+
+
+//*********************************  MEDIA 425PX   **************************************
+
+@media (max-width: 425px) {
+  .footer-wrapper {
+
+    .footer {
+      align-self: flex-end;
+      margin: 0;
+
+      a {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: 300;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: start;
+      padding: 0 10px;
+    }
+
+    .we-in {
+      align-self: flex-start;
+      align-items: center;
+      text-align: left;
+
+
+      img {
+        align-items: center;
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+        cursor: pointer;
+      }
+
+      img:hover {
+        height: 45px;
+        width: 45px;
+        padding: 3px;
+      }
+    }
+  }
+}

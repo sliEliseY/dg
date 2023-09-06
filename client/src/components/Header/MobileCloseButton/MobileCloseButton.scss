@@ -1,0 +1,19 @@
+.mobile__close__btn {
+  display: none;
+}
+
+@media (max-width: 826px) {
+  .mobile__close__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #FECE00;
+    display: block !important;
+  }
+
+  .mobile__close__btn:hover {
+    color: #fff;
+  }
+}
+
