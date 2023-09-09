@@ -23,7 +23,7 @@ const App = ( props ) => {
         <div className='app-wrapper-content'>
         {/* <Home state={props.state}/> */}
           <Routes>
-            <Route path='' element={<Home state={props.state} />} />
+            <Route path='' element={<Home />} />
             <Route path='/aboutUs/*' element={<AboutUs />} />
             {/* <Route path='' element={<AllServices />} /> */}
             {/* <Route path='/contacts/*' element={<Contacts />} /> */}

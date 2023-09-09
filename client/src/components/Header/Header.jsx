@@ -10,7 +10,7 @@ import { useSwipeable } from 'react-swipeable';
 
 
 const Header = () => {
-     
+
   const [nav, setNav] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -47,10 +47,10 @@ const Header = () => {
             </div>
             <div className="dropdown">
               <div className="nav">
-                <a href='/#allServices'>
+                {/* <a href='/#allServices'>
                   Все услуги -
-                  {/* <img src={str} alt="" /> */}
-                </a>
+                </a> */}
+                {/* <img src={str} alt="" /> */}
               </div>
               <div className="dropdown-content">
                 <NavLink to='/allServices/polishing/' onClick={closeMenu}>
@@ -102,7 +102,7 @@ const Header = () => {
         </div>
       </div>
     </>
-    
+
   );
 };
 

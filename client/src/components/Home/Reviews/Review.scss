@@ -1,18 +1,25 @@
 .reviews-wrapper {
-  display: flex;
+  padding-top: 100px;
   flex-direction: row;
 
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 10px;
+    
+  }
+  
   .review {
-    padding: 100px 150px;
+    padding: 50px 20px;
     display: flex;
-    flex-direction: column;
-
-    // img {
-    //   padding: 0px 0;
-    //   border-radius: 25px;
-    //   height: 100%;
-    //   width: 550px;
-    // }
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    img {
+      width: 2rem;      
+    }
     .image-container {
       padding: 10px;
       border-radius: 25px;
@@ -20,4 +27,8 @@
     }
 
   }
+}
+
+@media(max-width: 1260px) {
+
 }

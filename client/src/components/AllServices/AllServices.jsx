@@ -25,12 +25,12 @@ const AllServices = (props) => {
         breakpoint: 826, // Ширина экрана, на которой изменится количество слайдов
         settings: {
           speed: 700,
-          slidesToShow: 1, // Количество слайдов при адаптации
-          slidesToScroll: 1,
+          slidesToShow: 3, // Количество слайдов при адаптации
+          slidesToScroll: 2,
           dots: false
         }
       }
-    ]
+    ],
   };
 
   const galleryImages = [
@@ -54,7 +54,7 @@ const AllServices = (props) => {
           {galleryImages.map((item, index) => (
             <div key={index} className="slide">
               <NavLink to={item.path}>
-                <img src={item.image} alt={item.description} />
+                <img src={item.image} alt={item.description}/>
                 <p className="image-description">{item.description}</p>
               </NavLink>
             </div>

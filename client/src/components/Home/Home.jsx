@@ -19,7 +19,7 @@ const Home = ( props ) => {
       <AllServices images={[
         service1, service2, service3, service4, service5
       ]}/>
-      <Gallery galleryImage={props.state}/>
+      <Gallery />
       <Review />
     </div>
   );
