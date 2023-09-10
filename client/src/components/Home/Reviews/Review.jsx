@@ -4,15 +4,15 @@ import "./Review.scss";
 import review2 from "../../../images/review2.png";
 import review1 from "../../../images/review1.png";
 
-const Review = () => {
+const Review = (imageUrls) => {
   const reviewsVar = [review2, review1];
   return (
     <div id='reviews' className="reviews-wrapper">
         <h1>Отзывы</h1>
       <div className="review">
-        {reviewsVar.map((image, index) => (
+        {reviewsVar.map((imageUrl, index) => (
           <div key={index}>
-            <img src={image} className='image-container' alt="" />
+            <img src={imageUrl} className='image-container' alt="" />
           </div>
         ))}
       </div>
