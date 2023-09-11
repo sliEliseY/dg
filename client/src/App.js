@@ -15,15 +15,15 @@ import Ceramics from './components/AllServices/Ceramics/Ceramics';
 import AntiRain from './components/AllServices/AntiRain/AntiRain';
 import Salon from './components/AllServices/Salon/Salon';
 
+
 const App = ( props ) => {
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
         <div className='app-wrapper-content'>
-        {/* <Home state={props.state}/> */}
           <Routes>
-            <Route path='' element={<Home />} />
+            <Route path='' element={<Home state={props.state} />} />
             <Route path='/aboutUs/*' element={<AboutUs />} />
             {/* <Route path='' element={<AllServices />} /> */}
             {/* <Route path='/contacts/*' element={<Contacts />} /> */}

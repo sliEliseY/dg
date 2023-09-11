@@ -1,23 +1,19 @@
 import React from "react";
 import "./Review.scss";
 
-import review2 from "../../../images/review2.png";
-import review1 from "../../../images/review1.png";
-
-const Review = (imageUrls) => {
-  const reviewsVar = [review2, review1];
+const Review = (props) => {
   return (
-    <div id='reviews' className="reviews-wrapper">
-        <h1>Отзывы</h1>
+    <div id="reviews" className="reviews-wrapper">
+      <h1>Отзывы</h1>
       <div className="review">
-        {reviewsVar.map((imageUrl, index) => (
-          <div key={index}>
-            <img src={imageUrl} className='image-container' alt="" />
+        {props.reviewimage.reviewsImages.map((i, index) => (
+          <div key={index} className="image-container">
+            <img src={i.image} alt="images" />
           </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default Review;
