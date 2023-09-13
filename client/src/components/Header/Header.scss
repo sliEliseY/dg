@@ -1,8 +1,15 @@
+.header-wrapper.hidden {
+  display: none;
+  top: -100px; /* Здесь укажите значение, на которое будет сдвигаться шапка при скрытии */
+  transition: 0.3s;
+}
+
 .header-wrapper {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   background-color: #ffffff3b;
   width: 100%;

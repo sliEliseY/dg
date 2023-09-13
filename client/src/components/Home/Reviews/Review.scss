@@ -1,6 +1,7 @@
 .reviews-wrapper {
+  display: flex;
   padding-top: 100px;
-  flex-direction: row;
+  flex-direction: column;
 
   h1 {
     color: #fff;
@@ -14,47 +15,135 @@
   .review {
     padding: 50px 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    // flex-wrap: wrap;
     justify-content: center;
 
-    .image-container img{
+    .image-container {
+      width: 100%;
+
+    }
+
+    img {
+      block-size: cover;
       padding: 10px;
       border-radius: 25px;
-      width: 600px;
+      width: 550px;
     }
   }
 }
 
-@media(max-width: 1290px) {
+@media(max-width: 1150px) {
   .reviews-wrapper {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
 
     h1 {
-      justify-content: left;
       color: #fff;
       font-size: 40px;
       font-weight: 700;
-      text-align: start;
+      text-align: center;
+      align-items: center;
       padding: 0 10px;
     }
 
     .review {
       padding: 50px 20px;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
+      // flex-wrap: wrap;
       justify-content: center;
 
       .image-container {
+        width: 100%;
+
+      }
+
+      img {
+        block-size: cover;
         padding: 10px;
         border-radius: 25px;
-        width: 60%;
+        width: 400px;
       }
     }
   }
 }
 
-@media(max-width: 425px) {
+@media(max-width: 1000px) {
   .reviews-wrapper {
+    display: flex;
     padding-top: 100px;
+    flex-direction: column;
+
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .review {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      .image-container {
+        width: 100%;
+      }
+
+      img {
+        block-size: cover;
+        padding: 10px;
+        border-radius: 25px;
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media(max-width: 850px) {
+  .reviews-wrapper {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .review {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      .image-container {
+        width: 100%;
+      }
+
+      img {
+        block-size: cover;
+        padding: 10px;
+        border-radius: 25px;
+        width: 280px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .reviews-wrapper {
 
     h1 {
       color: #fff;
@@ -62,7 +151,6 @@
       font-weight: 700;
       text-align: start;
       padding: 0 40px;
-
     }
 
     .review {
@@ -74,8 +162,81 @@
       .image-container {
         padding: 10px;
         border-radius: 25px;
-        width: 95%;
+        width: 100%;
+
+        img {
+          block-size: cover;
+          padding: 10px;
+          border-radius: 25px;
+          width: 500px;
+        }
       }
     }
   }
 }
+
+@media(max-width: 600px) {
+  .reviews-wrapper {
+
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: start;
+      padding: 0 40px;
+    }
+
+    .review {
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .image-container {
+        padding: 10px;
+        border-radius: 25px;
+        width: 100%;
+
+        img {
+          block-size: cover;
+          padding: 10px;
+          border-radius: 25px;
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 600px) {
+  .reviews-wrapper {
+
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      text-align: start;
+      padding: 0 40px;
+    }
+
+    .review {
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .image-container {
+        padding: 10px;
+        border-radius: 25px;
+        width: 100%;
+
+        img {
+          block-size: cover;
+          padding: 0px;
+          border-radius: 15px;
+          width: 280px;
+        }
+      }
+    }
+  }
+}
+

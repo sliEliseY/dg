@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
 import logo1 from '../../images/logo1.png';
 import { NavLink } from "react-router-dom";
@@ -10,8 +10,10 @@ const Header = () => {
   const [nav, setNav] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isAllServicesOpen, setIsAllServicesOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
   const handleClick = () => {
+    setNav(!nav);
     setIsActive(!isActive);
   };
 
@@ -45,6 +47,28 @@ const Header = () => {
       setIsAllServicesOpen(false);
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+  
+      if (prevScrollPos < currentScrollPos) {
+        // Скроллинг вниз
+        document.querySelector('.header-wrapper').classList.add('hidden');
+      } else {
+        // Скроллинг вверх
+        document.querySelector('.header-wrapper').classList.remove('hidden');
+      }
+  
+      setPrevScrollPos(currentScrollPos);
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
     <>

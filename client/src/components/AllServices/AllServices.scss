@@ -1,4 +1,5 @@
-.gallery-wrapper{
+.gallery-wrapper {
+  
   h1 {
     color: #fff;
     font-size: 40px;
@@ -8,46 +9,42 @@
     padding: 0 10px;
   }
 
-.gallery-content {
-  width: 70%;
-  /* Ширина слайдера */
-  margin: 0 auto;
-  /* Центрирование слайдера */
-} 
-
-/* Стили для изображений в слайдере */
-.slick-slide img {
-  width: 100%;
-  height: auto;
-}
-
-.gallery-content {
-  .slick-slide {
-    border-radius: 10px; /* Задайте нужное значение радиуса скругления */
-    overflow: hidden; /* Обрежем содержимое слайдов по радиусу */
-  }
-}
-.slick-prev{
-  left: -80px;
-  background-color: #ffffff3d;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.slick-next {
-  right: -80px;
-    background-color: #ffffff3d;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  .gallery-content {
+    width: 70%;
+    /* Ширина слайдера */
+    margin: 0 auto;
+    /* Центрирование слайдера */
   }
 
-  .image-description{
+  /* Стили для изображений в слайдере */
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-content {
+    .slick-slide {
+      border-radius: 10px;
+      /* Задайте нужное значение радиуса скругления */
+      overflow: hidden;
+      /* Обрежем содержимое слайдов по радиусу */
+    }
+  }
+
+  .slick-prev {
+    left: -100px;
+  }
+
+  .slick-next {
+    right: -80px;
+  }
+
+  .image-description {
     text-align: center;
-  color: #FECE00;
-  text-decoration: none;
-  font-size: 20px;
-}
+    color: #FECE00;
+    text-decoration: none;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 826px) {
@@ -74,7 +71,7 @@
     }
   }
 
-  .image-description{
+  .image-description {
     text-align: center;
     color: #FECE00;
     text-decoration: none;
@@ -93,21 +90,38 @@
     width: 100%;
     height: auto;
   }
+
+  .slick-prev {
+    left: -80px;
+  }
+
+  .slick-next {
+    right: -70px;
+  }
+}
+
+@media (max-width: 650px) {
+  .gallery-wrapper {
+
+    .slick-prev {
+      left: -65px;
+    }
+  
+    .slick-next {
+      right: -50px;
+    }
+  }
 }
 
 @media(max-width: 425px) {
-  .slick-prev{
-    transform: translateX(80%);
-    background-color: #ffffff3d;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  .slick-next {
-    transform: translateX(-80%);
-      background-color: #ffffff3d;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
+  .gallery-wrapper {
+
+    .slick-prev {
+      left: -45px;
     }
+  
+    .slick-next {
+      right: -30px;
+    }
+  }
 }

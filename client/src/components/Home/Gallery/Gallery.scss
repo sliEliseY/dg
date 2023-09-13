@@ -19,7 +19,7 @@
     justify-content: center;
     color: #fff;
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 300; 
 
     a {
       font-size: 18px;
@@ -31,6 +31,18 @@
       transition-duration: 0.3s;
       text-decoration: none;
     }
+  }
+
+  .slick-prev:before,
+   .slick-next:before {
+    font-size: 40px; /* Измените размер шрифта, чтобы изменить размер стрелок */
+  }
+  .slick-prev {
+    left: -80px;
+  }
+
+  .slick-next {
+    right: -80px;
   }
 }
 
@@ -62,8 +74,6 @@
       margin: 100px 0 80px 0;
       padding-left: 30px;
 
-
-      // нужно сделать адаптив h1 с footer h2 под 768px и 425px
       h1 {
         justify-content: left;
         color: #fff;
@@ -92,17 +102,3 @@
     height: auto;
   }
 }
-.slick-prev{
-  left: -50px;
-  background-color: #ffffff3d;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.slick-next {
-  right: -50px;
-    background-color: #ffffff3d;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
