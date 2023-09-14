@@ -8,10 +8,8 @@ import AllServices from "../AllServices/AllServices";
 const Home = (props) => {
 
   return (
-    <div className="home-app-wrapper">
+    <div>
       <HomePageBanner />
-      <div className="all-services-wrapper">
-      </div>
       <AllServices serviceImage={props.state} />
       <Gallery galleryImage={props.state} />
       <Review reviewimage={props.state} />

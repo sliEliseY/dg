@@ -1,6 +1,7 @@
 .header-wrapper.hidden {
   display: none;
-  top: -100px; /* Здесь укажите значение, на которое будет сдвигаться шапка при скрытии */
+  top: -100px;
+  /* Здесь укажите значение, на которое будет сдвигаться шапка при скрытии */
   transition: 0.3s;
 }
 
@@ -67,6 +68,7 @@
   position: relative;
   display: inline-block;
 
+
   .nav {
     display: block;
     cursor: pointer;
@@ -90,17 +92,42 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 
-    .dropdown:hover .dropdown-content{
+    ul {
+      display: none;
+      position: absolute;
+      background-color: #000;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      list-style-type: none;
+    }
+
+    .dropdown:hover .dropdown-content {
       display: block;
     }
-  
+
+    li {
+      list-style-type: none;
+      padding: 5px;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      cursor: pointer;
+    }
+
+    li:hover {
+      color: #FECE00;
+      transition-duration: 0.2s;
+      cursor: pointer;
+    }
+
     .dropdown-content a {
       padding: 10px;
       color: #fff;
       text-decoration: none;
       display: block;
     }
-  
+
     .dropdown-content a:hover {
       color: #FECE00;
       transition-duration: 0.2s;
@@ -245,7 +272,7 @@
     }
 
     .open {
-      display:block;
+      display: block;
     }
 
     .dropdown-content a {

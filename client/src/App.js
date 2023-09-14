@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import AboutUs from './components/AboutUs/AboutUs';
 // import AllServices from './components/AllServices/AllServices';
 // import Contacts from './components/Contacts/Contacts';
-import Language from './components/Language/Language';
+// import Language from './components/Language/Language';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Polishing from './components/AllServices/Polishing/Polishing';
@@ -27,7 +27,7 @@ const App = ( props ) => {
             <Route path='/aboutUs/*' element={<AboutUs />} />
             {/* <Route path='' element={<AllServices />} /> */}
             {/* <Route path='/contacts/*' element={<Contacts />} /> */}
-            <Route path='/language/*' element={<Language />} />
+            {/* <Route path='/language/*' element={<Language />} /> */}
             <Route path="/allServices/polishing/*" element={<Polishing />} />
             <Route path="/allServices/cleaning/*" element={<Cleaning />} />
             <Route path="/allServices/ceilings/*" element={<Ceilings />} />

@@ -5,12 +5,16 @@ import { NavLink } from "react-router-dom";
 import MobileMenuButton from './MobileMenuButton/MobileMenuButton';
 import MobileCloseButton from './MobileCloseButton/MobileCloseButton';
 import { useSwipeable } from 'react-swipeable';
+import { useTranslation } from 'react-i18next';
+
+
 
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isAllServicesOpen, setIsAllServicesOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const { t, i18n } = useTranslation();
 
   const handleClick = () => {
     setNav(!nav);
@@ -48,10 +52,20 @@ const Header = () => {
     }
   };
 
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false); // Состояние для меню "Язык"
+
+  const toggleLanguageMenu = () => {
+    setIsLanguageMenuOpen(!isLanguageMenuOpen);
+  };
+
+  const closeLanguageMenu = () => {
+    setIsLanguageMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-  
+
       if (prevScrollPos < currentScrollPos) {
         // Скроллинг вниз
         document.querySelector('.header-wrapper').classList.add('hidden');
@@ -59,12 +73,12 @@ const Header = () => {
         // Скроллинг вверх
         document.querySelector('.header-wrapper').classList.remove('hidden');
       }
-  
+
       setPrevScrollPos(currentScrollPos);
     };
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -80,12 +94,12 @@ const Header = () => {
             <MobileCloseButton onClick={() => setNav(!nav)} />
             <div onClick={handleClick} className='nav'>
               <NavLink to='' onClick={handleMenuItemClick}>
-                Главная
+                {t('home')}
               </NavLink>
             </div>
             <div className="nav">
               <NavLink to='/aboutUs' onClick={handleMenuItemClick}>
-                О нас
+                {t('aboutUs')}
               </NavLink>
             </div>
             <div className="dropdown">
@@ -94,47 +108,67 @@ const Header = () => {
                 onClick={toggleAllServices}
                 onMouseEnter={handleMouseEnter}
               >
-                Все услуги -
+                {t('allServices')}
               </div>
               <div onMouseLeave={handleMouseLeave} className={`dropdown-content ${isAllServicesOpen ? 'open' : ''}`}>
                 <NavLink to='/allServices/polishing/' onClick={handleMenuItemClick}>
-                  Полировка
+                  {t('polishing')}
                 </NavLink>
                 <NavLink to='/allServices/cleaning/' onClick={handleMenuItemClick}>
-                  Химчистка
+                {t('cleaning')}
                 </NavLink>
                 <NavLink to='/allServices/ceilings/' onClick={handleMenuItemClick}>
-                  Потолки
+                {t('ceilings')}
                 </NavLink>
                 <NavLink to='/allServices/soundInsulation/' onClick={handleMenuItemClick}>
-                  Шумооизоляция
+                {t('soundInsulation')}
                 </NavLink>
                 <NavLink to='/allServices/ceramics/' onClick={handleMenuItemClick}>
-                  Крамика
+                {t('ceramics')}
                 </NavLink>
                 <NavLink to='/allServices/antiRain/' onClick={handleMenuItemClick}>
-                  Антидождь
+                {t('antiRain')}
                 </NavLink>
                 <NavLink to='/allServices/salon/' onClick={handleMenuItemClick}>
-                  Реставрация салона
+                {t('salon')}
                 </NavLink>
                 <NavLink to='/allServices/steeringWheel/' onClick={handleMenuItemClick}>
-                  Рули
+                {t('streetingWheel')}
                 </NavLink>
                 <NavLink to='/#reviews' />
               </div>
             </div>
             <div className="nav">
               <a href='/#contacts' onClick={handleMenuItemClick}>
-                Контакты
+                {t('contacts')}
               </a>
             </div>
             <div className="nav">
             </div>
-            <div className="nav">
-              <NavLink to='/language' onClick={handleMenuItemClick}>
-                Язык:
-              </NavLink>
+            <div className="dropdown">
+              <div
+                className="nav"
+                onClick={toggleLanguageMenu}
+                onMouseEnter={toggleLanguageMenu} // Открывает меню при наведении на "Язык"
+              >
+                {t('language')}
+              </div>
+              <ul
+                onMouseLeave={closeLanguageMenu}
+                className={`dropdown-content ${isLanguageMenuOpen ? 'open' : ''}`}
+              >
+                <li onClick={() => { i18n.changeLanguage('ru'); handleMenuItemClick(); }}>
+                  {t('russian')}
+                </li>
+                <li onClick={() => { i18n.changeLanguage('en'); handleMenuItemClick(); }}>
+                  {t('english')}
+                </li>
+              </ul>
+              {/* <select onChange={(e) => i18n.changeLanguage(e.target.value)}>
+                <option>Choose language</option>
+                <option value="ru">Russian</option>
+                <option value="en">English</option>
+              </select> */}
             </div>
           </nav>
         </div>
