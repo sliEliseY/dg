@@ -35,6 +35,8 @@ const AllServices = (props) => {
     ],
   };
 
+  
+
   return (
     <div id='allServices' className="gallery-wrapper">
       <div className="headings">

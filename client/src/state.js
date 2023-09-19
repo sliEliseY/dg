@@ -63,8 +63,8 @@ import service6 from './images/service6.png';
 import service7 from './images/service7.png';
 import service8 from './images/service8.png';
 
-const store = {
-  _state: {
+  const store = {
+    _state: {
     galleryImages: [
       { image: gallery1 },
       { image: gallery2 },
