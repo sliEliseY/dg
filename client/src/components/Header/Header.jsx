@@ -133,7 +133,7 @@ const Header = () => {
                 {t('salon')}
                 </NavLink>
                 <NavLink to='/allServices/steeringWheel/' onClick={handleMenuItemClick}>
-                {t('streetingWheel')}
+                {t('steeringWheel')}
                 </NavLink>
                 <NavLink to='/#reviews' />
               </div>

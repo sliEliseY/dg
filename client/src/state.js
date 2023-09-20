@@ -53,16 +53,6 @@ import gallery47 from "./images/gallery47.jpg";
 import gallery48 from "./images/gallery48.jpg";
 import gallery49 from "./images/gallery49.jpg";
 
-//***********************************************Все наши услуги********************************************
-import service1 from './images/service1.png';
-import service2 from './images/service2.png';
-import service3 from './images/service3.png';
-import service4 from './images/service4.png';
-import service5 from './images/service5.png';
-import service6 from './images/service6.png';
-import service7 from './images/service7.png';
-import service8 from './images/service8.png';
-
   const store = {
     _state: {
     galleryImages: [
@@ -119,17 +109,7 @@ import service8 from './images/service8.png';
     reviewsImages: [
       { image: review2 },
       { image: review1 }
-    ],
-    serviceImages: [
-      { image: service1, description: 'Полировка', path: '/allServices/polishing/' },
-      { image: service2, description: 'Химчистка', path: '/allServices/cleaning/' },
-      { image: service3, description: 'Потолки', path: '/allServices/ceilings/' },
-      { image: service4, description: 'Шумооизоляция', path: '/allServices/soundInsulation/' },
-      { image: service5, description: 'Крамика', path: '/allServices/ceramics/' },
-      { image: service6, description: 'Антидождь', path: '/allServices/antiRain/' },
-      { image: service7, description: 'Реставрация салона', path: '/allServices/salon/' },
-      { image: service8, description: 'Рули', path: '/allServices/steeringWheel/' }
-    ],
+    ]
   },
 
   rerenderEntireTree() {
