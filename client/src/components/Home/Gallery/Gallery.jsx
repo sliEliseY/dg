@@ -4,8 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Gallery.scss';
+import { useTranslation } from "react-i18next";
 
 const Gallery = (props) => {
+
+  const {t} = useTranslation();
 
   const settings = {
     dots: true,
@@ -28,8 +31,8 @@ const Gallery = (props) => {
   return (
     <div className="gallery-wrapper">
       <div className="headings">
-        <h1>Галерея</h1>
-        <h2>Больше фото в нашем <a href="https://instagram.com/detailing_garage.md?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer">Instagram</a></h2>
+        <h1>{t("gallery")}</h1>
+        <h2>{t("ourContent")}<a href="https://instagram.com/detailing_garage.md?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer">Instagram</a></h2>
       </div>
       <div className="gallery-content">
         <Slider {...settings}>

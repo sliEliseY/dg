@@ -15,10 +15,6 @@ import service6 from '../../images/service6.png';
 import service7 from '../../images/service7.png';
 import service8 from '../../images/service8.png';
 
-// serviceImages: [
-//   { image: service8, description: 'Рули', path:  }
-// ],
-
 const AllServices = (props) => {
   const settings = {
     dots: true,
@@ -53,7 +49,7 @@ const AllServices = (props) => {
   return (
     <div id='allServices' className="gallery-wrapper">
       <div className="headings">
-        <h1>Все наши услуги</h1>
+        <h1>{t("allOurServices")}</h1>
       </div>
       <div className="gallery-content">
         <Slider {...settings}>

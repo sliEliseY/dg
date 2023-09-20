@@ -163,6 +163,9 @@ const Header = () => {
                 <li onClick={() => { i18n.changeLanguage('en'); handleMenuItemClick(); }}>
                   {t('english')}
                 </li>
+                <li onClick={() => { i18n.changeLanguage('ro'); handleMenuItemClick(); }}>
+                  {t('romanian')}
+                </li>
               </ul>
               {/* <select onChange={(e) => i18n.changeLanguage(e.target.value)}>
                 <option>Choose language</option>
@@ -174,8 +177,8 @@ const Header = () => {
         </div>
         <div className="contacts" onClick={handleMenuItemClick}>
           <ul>
-            <li>+373 78 640 888</li>
-            <li>Бельцы, ул.Карасёва 98</li>
+          <li><a href="tel:+37378640888">+373 78 640 888</a></li>
+            <li>{t("balti")}</li>
           </ul>
         </div>
       </div>
