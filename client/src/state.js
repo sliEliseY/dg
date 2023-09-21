@@ -53,6 +53,9 @@ import gallery47 from "./images/gallery47.jpg";
 import gallery48 from "./images/gallery48.jpg";
 import gallery49 from "./images/gallery49.jpg";
 
+import redCar from "./images/redCar.mp4";
+import whiteCar from "./images/whiteCar.mp4";
+
   const store = {
     _state: {
     galleryImages: [
@@ -105,6 +108,10 @@ import gallery49 from "./images/gallery49.jpg";
       { image: gallery47 },
       { image: gallery48 },
       { image: gallery49 }
+    ],
+    videoSlider: [
+      {video: redCar},
+      {video: whiteCar}
     ],
     reviewsImages: [
       { image: review2 },

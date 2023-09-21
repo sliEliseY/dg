@@ -1,0 +1,63 @@
+.video-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  width: 40%;
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 40px;
+    /* Измените размер шрифта, чтобы изменить размер стрелок */
+  }
+
+  .slick-prev {
+    left: -80px;
+  }
+
+  .slick-next {
+    right: -80px;
+  }
+}
+
+/* Стили для видео в слайдере */
+.slick-slide>div>video {
+  width: 100%;
+  /* Измените размер видео, если нужно */
+  height: auto;
+  border-radius: 15px;
+  /* Это позволит видео сохранить пропорции */
+}
+
+@media (max-width: 826px) {
+  .video-wrapper {
+    width: 70%;
+    /* Ширина слайдера */
+    margin: 0 auto;
+    /* Центрирование слайдера */
+    max-width: 650px;
+
+    .slick-prev {
+      left: -70px;
+    }
+  
+    .slick-next {
+      right: -70px;
+    }
+  }
+}
+@media (max-width: 826px) {
+  .video-wrapper {
+    width: 70%;
+    /* Ширина слайдера */
+    margin: 0 auto;
+    /* Центрирование слайдера */
+    max-width: 650px;
+
+    .slick-prev {
+      left: -50px;
+    }
+  
+    .slick-next {
+      right: -40px;
+    }
+  }
+}
