@@ -14,6 +14,7 @@ import SoundInsulation from './components/AllServices/SoundInsulation/SoundInsul
 import Ceramics from './components/AllServices/Ceramics/Ceramics';
 import AntiRain from './components/AllServices/AntiRain/AntiRain';
 import Salon from './components/AllServices/Salon/Salon';
+import Films from './components/AllServices/Films/Films';
 
 
 const App = ( props ) => {
@@ -28,6 +29,7 @@ const App = ( props ) => {
             {/* <Route path='' element={<AllServices />} /> */}
             {/* <Route path='/contacts/*' element={<Contacts />} /> */}
             {/* <Route path='/language/*' element={<Language />} /> */}
+            <Route path="/allServices/films/*" element={<Films />} />
             <Route path="/allServices/polishing/*" element={<Polishing />} />
             <Route path="/allServices/cleaning/*" element={<Cleaning />} />
             <Route path="/allServices/ceilings/*" element={<Ceilings />} />

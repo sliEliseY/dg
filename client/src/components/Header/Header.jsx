@@ -7,6 +7,12 @@ import MobileCloseButton from './MobileCloseButton/MobileCloseButton';
 import { useSwipeable } from 'react-swipeable';
 import { useTranslation } from 'react-i18next';
 
+import instagram from '../../images/instagram.png';
+import tiktok from '../../images/tiktok.png';
+import youtube from '../../images/youtube.png';
+import whatsapp from '../../images/whatsapp.png';
+import telegram from '../../images/telegram.png';
+
 
 
 const Header = () => {
@@ -97,11 +103,6 @@ const Header = () => {
                 {t('home')}
               </NavLink>
             </div>
-            <div className="nav">
-              <NavLink to='/aboutUs' onClick={handleMenuItemClick}>
-                {t('aboutUs')}
-              </NavLink>
-            </div>
             <div className="dropdown">
               <div
                 className="nav"
@@ -111,39 +112,45 @@ const Header = () => {
                 {t('allServices')}
               </div>
               <div onMouseLeave={handleMouseLeave} className={`dropdown-content ${isAllServicesOpen ? 'open' : ''}`}>
+                <NavLink to='/allServices/films/' onClick={handleMenuItemClick}>
+                  {t('films')}
+                </NavLink>
                 <NavLink to='/allServices/polishing/' onClick={handleMenuItemClick}>
                   {t('polishing')}
                 </NavLink>
                 <NavLink to='/allServices/cleaning/' onClick={handleMenuItemClick}>
-                {t('cleaning')}
+                  {t('cleaning')}
                 </NavLink>
                 <NavLink to='/allServices/ceilings/' onClick={handleMenuItemClick}>
-                {t('ceilings')}
+                  {t('ceilings')}
                 </NavLink>
                 <NavLink to='/allServices/soundInsulation/' onClick={handleMenuItemClick}>
-                {t('soundInsulation')}
+                  {t('soundInsulation')}
                 </NavLink>
                 <NavLink to='/allServices/ceramics/' onClick={handleMenuItemClick}>
-                {t('ceramics')}
+                  {t('ceramics')}
                 </NavLink>
                 <NavLink to='/allServices/antiRain/' onClick={handleMenuItemClick}>
-                {t('antiRain')}
+                  {t('antiRain')}
                 </NavLink>
                 <NavLink to='/allServices/salon/' onClick={handleMenuItemClick}>
-                {t('salon')}
+                  {t('salon')}
                 </NavLink>
                 <NavLink to='/allServices/steeringWheel/' onClick={handleMenuItemClick}>
-                {t('steeringWheel')}
+                  {t('steeringWheel')}
                 </NavLink>
                 <NavLink to='/#reviews' />
               </div>
             </div>
             <div className="nav">
+              <NavLink to='/aboutUs' onClick={handleMenuItemClick}>
+                {t('aboutUs')}
+              </NavLink>
+            </div>
+            <div className="nav">
               <a href='/#contacts' onClick={handleMenuItemClick}>
                 {t('contacts')}
               </a>
-            </div>
-            <div className="nav">
             </div>
             <div className="dropdown">
               <div
@@ -167,17 +174,25 @@ const Header = () => {
                   {t('romanian')}
                 </li>
               </ul>
-              {/* <select onChange={(e) => i18n.changeLanguage(e.target.value)}>
-                <option>Choose language</option>
-                <option value="ru">Russian</option>
-                <option value="en">English</option>
-              </select> */}
+            </div>
+            <div className="nav nav-burger-contacts" onClick={handleMenuItemClick}>
+              <div className="nav-burger-contacts-wrapper">
+                <a href="tel:+37378640888">+373 78 640 888</a>
+                <div className="we-in">
+                  <h2>{t("inNetworks")}</h2>
+                  <a href="https://instagram.com/detailing_garage.md?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer"><img src={instagram} alt="" /></a>
+                  <a href="https://www.tiktok.com/@detailing_garage.md" target="_blank" rel="noreferrer"><img src={tiktok} alt="" /></a>
+                  <a href="https://www.youtube.com/@DetailingGarageMD" target="_blank" rel="noreferrer"><img src={youtube} alt="" /></a>
+                  <a href="https://api.whatsapp.com/send?phone=37378640888&text=" target="_blank" rel="noreferrer"><img src={whatsapp} alt="" /></a>
+                  <a href="https://t.me/detailing_garage_md" target="_blank" rel="noreferrer"><img src={telegram} alt="" /></a>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
         <div className="contacts" onClick={handleMenuItemClick}>
           <ul>
-          <li><a href="tel:+37378640888">+373 78 640 888</a></li>
+            <li><a href="tel:+37378640888">+373 78 640 888</a></li>
             <li>{t("balti")}</li>
           </ul>
         </div>

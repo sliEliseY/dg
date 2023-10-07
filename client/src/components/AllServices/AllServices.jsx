@@ -14,6 +14,7 @@ import service5 from '../../images/service5.png';
 import service6 from '../../images/service6.png';
 import service7 from '../../images/service7.png';
 import service8 from '../../images/service8.png';
+import service11 from '../../images/service11.png';
 
 const AllServices = (props) => {
   const settings = {
@@ -21,7 +22,7 @@ const AllServices = (props) => {
     infinite: true,
     speed: 1000,
     slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 826, // Ширина экрана, на которой изменится количество слайдов
@@ -54,6 +55,13 @@ const AllServices = (props) => {
       <div className="gallery-content">
         <Slider {...settings}>
             <div className="slide">
+              <a href='/allServices/films'>
+                <img src={service3} alt='Потолки' />
+                <p className="image-description">{t("films")}</p> 
+                {/* изменил ссылку, нужно ее добавить и вставить в перевод */}
+              </a>
+            </div>
+            <div className="slide">
               <a href='/allServices/polishing/'>
                 <img src={service1} alt='Полировка' />
                 <p className="image-description">{t('polishing')}</p>
@@ -67,7 +75,7 @@ const AllServices = (props) => {
             </div>
             <div className="slide">
               <a href='/allServices/ceilings/'>
-                <img src={service3} alt='Потолки' />
+                <img src={service6} alt='Потолки' />
                 <p className="image-description">{t("ceilings")}</p>
               </a>
             </div>
@@ -85,7 +93,7 @@ const AllServices = (props) => {
             </div>
             <div className="slide">
               <a href='/allServices/antiRain/'>
-                <img src={service6} alt='Антидождь' />
+                <img src={service11} alt='Антидождь' />
                 <p className="image-description">{t("antiRain")}</p>
               </a>
             </div>
