@@ -72,16 +72,18 @@ const Header = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
 
-      if (prevScrollPos < currentScrollPos) {
-        // Скроллинг вниз
-        document.querySelector('.header-wrapper').classList.add('hidden');
-      } else {
-        // Скроллинг вверх
-        document.querySelector('.header-wrapper').classList.remove('hidden');
+      if (window.innerWidth > 425) {
+        if (prevScrollPos < currentScrollPos) {
+          // Скроллинг вниз
+          document.querySelector('.header-wrapper').classList.add('hidden');
+        } else {
+          // Скроллинг вверх
+          document.querySelector('.header-wrapper').classList.remove('hidden');
+        }
       }
-
       setPrevScrollPos(currentScrollPos);
     };
+
 
     window.addEventListener('scroll', handleScroll);
 
@@ -130,7 +132,7 @@ const Header = () => {
                 <NavLink to='/allServices/ceramics/' onClick={handleMenuItemClick}>
                   {t('ceramics')}
                 </NavLink>
-                <NavLink to='/allServices/antiRain/' onClick={handleMenuItemClick}>
+                <NavLink to='/allServices/antiRain/'  onClick={handleMenuItemClick}>
                   {t('antiRain')}
                 </NavLink>
                 <NavLink to='/allServices/salon/' onClick={handleMenuItemClick}>
@@ -178,8 +180,8 @@ const Header = () => {
             <div className="nav nav-burger-contacts" onClick={handleMenuItemClick}>
               <div className="nav-burger-contacts-wrapper">
                 <a href="tel:+37378640888">+373 78 640 888</a>
+                <h2>{t("inNetworks")}</h2>
                 <div className="we-in">
-                  <h2>{t("inNetworks")}</h2>
                   <a href="https://instagram.com/detailing_garage.md?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer"><img src={instagram} alt="" /></a>
                   <a href="https://www.tiktok.com/@detailing_garage.md" target="_blank" rel="noreferrer"><img src={tiktok} alt="" /></a>
                   <a href="https://www.youtube.com/@DetailingGarageMD" target="_blank" rel="noreferrer"><img src={youtube} alt="" /></a>

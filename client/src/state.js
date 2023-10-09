@@ -59,31 +59,11 @@ import whiteCar from "./images/whiteCar.mp4";
   const store = {
     _state: {
     galleryImages: [
-      { image: gallery1 },
-      { image: gallery2 },
-      { image: gallery3 },
-      { image: gallery4 },
-      { image: gallery5 },
-      { image: gallery6 },
-      { image: gallery7 },
-      { image: gallery8 },
-      { image: gallery9 },
-      { image: gallery10 },
-      { image: gallery11 },
-      { image: gallery12 },
-      { image: gallery13 },
-      { image: gallery14 },
-      { image: gallery15 },
-      { image: gallery16 },
-      { image: gallery17 },
-      { image: gallery18 },
-      { image: gallery19 },
-      { image: gallery20 },
-      { image: gallery21 },
-      { image: gallery22 },
-      { image: gallery23 },
-      { image: gallery24 },
-      { image: gallery25 },
+      { image: gallery1 },{ image: gallery2 }, { image: gallery3 }, { image: gallery4 }, { image: gallery5 },
+      { image: gallery6 },{ image: gallery7 }, { image: gallery8 }, { image: gallery9 }, { image: gallery10 },
+      { image: gallery11 },{ image: gallery12 },{ image: gallery13 },{ image: gallery14 },{ image: gallery15 },
+      { image: gallery16 },{ image: gallery17 },{ image: gallery18 },{ image: gallery19 },{ image: gallery20 },
+      { image: gallery21 },{ image: gallery22 },{ image: gallery23 },{ image: gallery24 },{ image: gallery25 },
       { image: gallery26 },
       { image: gallery27 },
       { image: gallery28 },
@@ -116,7 +96,23 @@ import whiteCar from "./images/whiteCar.mp4";
     reviewsImages: [
       { image: review2 },
       { image: review1 }
-    ]
+    ],
+    prices: {
+      polishing: {
+        abrazivePolishing: [
+          {firstClass: "2500"},
+          {secondClass: "3000"},
+          {thirdClass: "3500"},
+          {fourthClass: "4000"}
+        ],
+        softPolishing: [
+          {firstClass: "2000"},
+          {secondClass: "2500"},
+          {thirdClass: "3000"},
+          {fourthClass: "3500"}
+        ]
+      }
+    }
   },
 
   rerenderEntireTree() {

@@ -1,0 +1,206 @@
+.abrazive-polishing-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  background-image: url('../../../images/banner2.jpg');
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+
+  h1 {
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+    font-size: 50px;
+  }
+
+  hr {
+    border: 1px solid #FECE00;
+  }
+
+  .service-description {
+    max-width: 700px;
+    padding: 40px 70px;
+    margin: 0 auto;
+    background-color: #4d4d4d;
+    border-radius: 25px;
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      color: #FECE00;
+      font-size: 35px;
+    }
+
+
+    ul {
+      list-style: none;
+
+      li {
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+
+    ul li:before {
+      content: " — ";
+    }
+  }
+
+  .classes {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .prices-class {
+      margin: 0 auto;
+      background-color: #4d4d4d;
+      border-radius: 25px;
+      padding: 10px 30px;
+
+      h3 {
+        font-size: 25px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        width: 280px;
+        height: 140px;
+      }
+      .jetta {
+        width: 230px;
+        height: 140px;
+        padding: 0 30px;
+      }
+      .touran {
+        width: 280px;
+        height: 150px;
+      }
+      .tiguran {
+        width: 270px;
+        height: 150px;
+      }
+
+      h4 {
+        margin: 0;
+        text-align: center;
+        color: #FECE00;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .abrazive-polishing-wrapper {
+    background-image: url('../../../images/bannerServices1.png');
+  }
+}
+
+
+.soft-polishing-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url('../../../images/banner2.jpg');
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+
+  h1 {
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+    font-size: 50px;
+  }
+
+  hr {
+    border: 1px solid #FECE00;
+  }
+
+  .service-description {
+    max-width: 700px;
+    padding: 40px 70px;
+    margin: 0 auto;
+    background-color: #4d4d4d;
+    border-radius: 25px;
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      color: #FECE00;
+      font-size: 35px;
+    }
+
+
+    ul {
+      list-style: none;
+
+      li {
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+
+    ul li:before {
+      content: " — ";
+    }
+  }
+
+  .classes {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .prices-class {
+      margin: 0 auto;
+      background-color: #4d4d4d;
+      border-radius: 25px;
+      padding: 10px 30px;
+
+      h3 {
+        font-size: 25px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        width: 280px;
+        height: 140px;
+      }
+      .jetta {
+        width: 230px;
+        height: 140px;
+        padding: 0 30px;
+      }
+      .touran {
+        width: 280px;
+        height: 140px;
+      }
+      .tiguran {
+        width: 270px;
+        height: 150px;
+      }
+
+      h4 {
+        margin: 0;
+        text-align: center;
+        color: #FECE00;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// @media(max-width: 825px) {
+
+// }

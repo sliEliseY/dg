@@ -19,7 +19,8 @@ const VideoSlider = (props) => {
     <div className="video-wrapper">
       <Slider {...settings}>
         {props.videoSlider.videoSlider.map((v, index) => (
-          <video className="slide" key={index} src={v.video} controls autoPlay muted />
+          <video className="slide"
+           key={index} src={v.video} controls autoPlay muted />
         ))}
       </Slider>
     </div>
