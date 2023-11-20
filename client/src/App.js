@@ -28,11 +28,11 @@ const App = ( props ) => {
             {/* <Route path='/language/*' element={<Language />} /> */}
             <Route path="/allServices/films/*" element={<Films state={props.state}/>} />
             <Route path="/allServices/polishing/*" element={<Polishing prices={props.state.prices.polishing}/>} />
-            <Route path="/allServices/cleaning/*" element={<Cleaning state={props.state}/>} />
+            <Route path="/allServices/cleaning/*" element={<Cleaning prices={props.state.prices.cleanings}/>} />
             <Route path="/allServices/ceilings/*" element={<Ceilings state={props.state}/>} />
             <Route path="/allServices/soundInsulation/*" element={<SoundInsulation state={props.state}/>} />
-            <Route path="/allServices/ceramics/*" element={<Ceramics state={props.state}/>} />
-            <Route path="/allServices/antiRain/*" element={<AntiRain state={props.state}/>} />
+            <Route path="/allServices/ceramics/*" element={<Ceramics prices={props.state.prices}/>} />
+            <Route path="/allServices/antiRain/*" element={<AntiRain prices={props.state.prices}/>} />
             <Route path="/allServices/salon/*" element={<Salon state={props.state}/>} />
 
             <Route path='/' element={<Footer />} />

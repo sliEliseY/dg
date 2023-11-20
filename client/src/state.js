@@ -97,19 +97,53 @@ import whiteCar from "./images/whiteCar.mp4";
       { image: review2 },
       { image: review1 }
     ],
+
+    //*************************ЦЕНЫ********************* */
     prices: {
+      //********ПОЛИРОВКА********* */
       polishing: {
+        //*******АБРАЗИВНАЯ ПОЛИРОВКА******** */
         abrazivePolishing: [
           {firstClass: "2500"},
           {secondClass: "3000"},
           {thirdClass: "3500"},
           {fourthClass: "4000"}
         ],
+        //********МЯГКАЯ ПОЛИРОВКА************** */
         softPolishing: [
           {firstClass: "2000"},
           {secondClass: "2500"},
           {thirdClass: "3000"},
           {fourthClass: "3500"}
+        ]
+      },
+      //******КЕРАМИКА******** */
+      ceramics: [
+        { firstClass: "2000" },
+        { secondClass: "2500" },
+        { thirdClass: "3000" },
+        { fourthClass: "3500" }
+      ],
+      //*******АНТИДОЖДЬ********* */
+      antiRain: [
+        { firstClass: "800" },
+        { secondClass: "1000" },
+        { thirdClass: "1200" },
+        { fourthClass: "1500" }
+      ],
+      //********ХИМЧИСТКА********* */
+      cleanings: {
+        cleaning: [
+          {firstClass: "1700"},
+          {secondClass: "2000"},
+          {thirdClass: "2500"},
+          {fourthClass: "3000"}
+        ],
+        cleaningExpress: [
+          {firstClass: "1000"},
+          {secondClass: "1200"},
+          {thirdClass: "1500"},
+          {fourthClass: "2000"}
         ]
       }
     }

@@ -4,47 +4,49 @@ import Golf from "../../../images/Golf.png";
 import Jetta from "../../../images/Jetta.png";
 import Touran from "../../../images/Touran.png";
 import Tiguran from "../../../images/Tiguran.png";
+import { useTranslation } from 'react-i18next';
 
 const Polishing = (props) => {
+  const {t} = useTranslation();
 
   return (<>
   {/* *****************************АБРАЗИВНАЯ ПОЛИРОВКА***************************** */}
-    <div className="abrazive-polishing-wrapper">
-      <h1>АБРАЗИВНАЯ ПОЛИРОВКА:</h1>
+    <div className="polishing-wrapper">
+      <h1>{t('abrazivePolishing')}:</h1>
       <div className="service-description">
-        <h2>В УСЛУГУ ВХОДИТ: </h2>
+        <h2>{t('serviceIncludes')}</h2>
         <hr />
         <ul>
-          <li>Очистка кузова автомобиля синтетической глиной</li>
-          <li>Профессиональная полировка кузова автомобиля </li>
-          <li>Устранение царапин на кузове автомобиля</li>
-          <li>Удаление голограмм</li>
-          <li>Очистка автомобиля от остатков полировальной пасты</li>
-          <li>Нанесение твердого воска</li>
-          <li>Чернение покрышек</li>
+          <li>{t('aPolishing1')}</li>
+          <li>{t('aPolishing2')}</li>
+          <li>{t('aPolishing3')}</li>
+          <li>{t('aPolishing4')}</li>
+          <li>{t('aPolishing5')}</li>
+          <li>{t('aPolishing6')}</li>
+          <li>{t('aPolishing7')}</li>
         </ul>
       </div>
       <div className="classes">
-        <div className="prices-class">
-          <h3>1 класс</h3>
+        <div className="golf-prices-class">
+          <h3>I {t('class')}</h3>
           <hr />
           <img className="golf" src={Golf} alt="image1" />
           <h4>{props.prices.abrazivePolishing[0].firstClass} MDL</h4>
         </div>
-        <div className="prices-class">
-          <h3>2 класс</h3>
+        <div className="jetta-prices-class">
+          <h3>II {t('class')}</h3>
           <hr />
           <img className="jetta" src={Jetta} alt="image2" />
           <h4>{props.prices.abrazivePolishing[1].secondClass} MDL</h4>
         </div>
-        <div className="prices-class">
-          <h3>3 класс</h3>
+        <div className="touran-prices-class">
+          <h3>III {t('class')}</h3>
           <hr />
           <img className="touran" src={Touran} alt="image3" />
           <h4>{props.prices.abrazivePolishing[2].thirdClass} MDL</h4>
         </div>
-        <div className="prices-class">
-          <h3>4 класс</h3>
+        <div className="tiguran-prices-class">
+          <h3>IV {t('class')}</h3>
           <hr />
           <img className="tiguran" src={Tiguran} alt="image4" />
           <h4>{props.prices.abrazivePolishing[3].fourthClass} MDL</h4>
@@ -53,41 +55,41 @@ const Polishing = (props) => {
     </div>
 
 {/* *********************************МЯГКАЯ ПОЛИРОВКА******************************* */}
-    <div className="soft-polishing-wrapper">
-      <h1>МЯГКАЯ ПОЛИРОВКА:</h1>
+    <div className="polishing-wrapper">
+      <h1>{t('softPolishing')}:</h1>
       <div className="service-description">
-        <h2>В УСЛУГУ ВХОДИТ: </h2>
+        <h2>{t('serviceIncludes')}</h2>
         <hr />
         <ul>
-          <li>Профессиональная полировка кузова автомобиля</li>
-          <li>Устранение паутины и придание блеска автомобилю</li>
-          <li>Удаление голограмм</li>
-          <li>Очистка автомобиля от остатков полировальной пасты</li>
-          <li>Нанесение твердого воска</li>
-          <li>Чернение покрышек</li>
+          <li>{t('sPolishing1')}</li>
+          <li>{t('sPolishing2')}</li>
+          <li>{t('sPolishing3')}</li>
+          <li>{t('sPolishing4')}</li>
+          <li>{t('sPolishing5')}</li>
+          <li>{t('sPolishing6')}</li>
         </ul>
       </div>
       <div className="classes">
-        <div className="prices-class">
-          <h3>1 класс</h3>
+        <div className="golf-prices-class">
+          <h3>I {t('class')}</h3>
           <hr />
           <img className="golf" src={Golf} alt="image1" />
           <h4>{props.prices.softPolishing[0].firstClass} MDL</h4>
         </div>
-        <div className="prices-class">
-          <h3>2 класс</h3>
+        <div className="jetta-prices-class">
+          <h3>II {t('class')}</h3>
           <hr />
           <img className="jetta" src={Jetta} alt="image2" />
           <h4>{props.prices.softPolishing[1].secondClass} MDL</h4>
         </div>
-        <div className="prices-class">
-          <h3>3 класс</h3>
+        <div className="touran-prices-class">
+          <h3>III {t('class')}</h3>
           <hr />
           <img className="touran" src={Touran} alt="image3" />
           <h4>{props.prices.softPolishing[2].thirdClass} MDL</h4>
         </div>
-        <div className="prices-class">
-          <h3>4 класс</h3>
+        <div className="tiguran-prices-class">
+          <h3>IV {t('class')}</h3>
           <hr />
           <img className="tiguran" src={Tiguran} alt="image4" />
           <h4>{props.prices.softPolishing[3].fourthClass} MDL</h4>
@@ -96,7 +98,6 @@ const Polishing = (props) => {
     </div>
   </>
   );
-
 }
 
 export default Polishing;

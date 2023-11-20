@@ -1,0 +1,804 @@
+.polishing-wrapper {
+  // min-width: 768px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url('../../../images/banner2-1.jpeg');
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  padding-top: 100px;
+  width: 100%;
+
+  h1 {
+    margin: 0 auto;
+    padding: 10px 0;
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+    font-size: 50px;
+  }
+
+  hr {
+    border: 1px solid #FECE00;
+  }
+
+  .service-description {
+    max-width: 700px;
+    padding: 40px 70px;
+    margin: 0 auto;
+    background-color: #4d4d4dd9;
+    border-radius: 25px;
+
+    h2 {
+      text-align: center;
+      margin: 0;
+      color: #FECE00;
+      font-size: 35px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+
+    ul li:before {
+      content: " — ";
+    }
+  }
+
+  .classes {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .golf-prices-class {
+      position: relative;
+      margin: 0 5px;
+      background-color: #4d4d4dd9;
+      border-radius: 25px;
+      padding: 10px 30px;
+    }
+
+    .jetta-prices-class {
+      position: relative;
+      margin: 0 5px;
+      background-color: #4d4d4dd9;
+      border-radius: 25px;
+      padding: 10px 30px;
+    }
+
+    .touran-prices-class {
+      position: relative;
+      margin: 0 5px;
+      background-color: #4d4d4dd9;
+      border-radius: 25px;
+      padding: 10px 30px;
+    }
+
+    .tiguran-prices-class {
+      position: relative;
+      margin: 0 5px;
+      background-color: #4d4d4dd9;
+      border-radius: 25px;
+      padding: 10px 30px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 35px;
+      margin: 0 auto;
+      color: #FECE00;
+      text-align: center;
+    }
+
+    .golf {
+      padding: 30px 0 70px 0;
+      width: 280px;
+      height: 150px;
+    }
+
+    .jetta {
+      padding: 40px 0 60px 0;
+      width: 280px;
+      height: 140px;
+    }
+
+    .touran {
+      padding: 30px 0 70px 0;
+      width: 280px;
+      height: 170px;
+    }
+
+    .tiguran {
+      padding: 30px 0 70px 0;
+      width: 270px;
+      height: 150px;
+    }
+
+    h4 {
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      text-align: center;
+      color: #FECE00;
+      font-size: 40px;
+      font-weight: 500;
+      padding: 20px 0;
+      left: 20px;
+      right: 20px;
+    }
+  }
+
+}
+
+@media(max-width: 1400px) {
+  .polishing-wrapper {
+    padding-top: 100px;
+
+    h1 {
+      padding: 10px 0;
+      font-size: 45px;
+    }
+
+    .service-description {
+      max-width: 650px;
+
+      h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 33px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          text-align: center;
+          color: #fff;
+          font-size: 25px;
+          font-weight: 300;
+        }
+      }
+
+      ul li:before {
+        content: " — ";
+      }
+    }
+
+    .classes {
+      padding-top: 50px;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .golf-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 20px;
+      }
+
+      .jetta-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 20px;
+      }
+
+      .touran-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 20px;
+      }
+
+      .tiguran-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 20px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        padding: 30px 0 70px 0;
+        width: 250px;
+        height: 130px;
+      }
+
+      .jetta {
+        padding: 40px 0 60px 0;
+        width: 250px;
+        height: 120px;
+      }
+
+      .touran {
+        padding: 30px 0 70px 0;
+        width: 250px;
+        height: 150px;
+      }
+
+      .tiguran {
+        padding: 30px 0 70px 0;
+        width: 240px;
+        height: 130px;
+      }
+
+      h4 {
+        font-size: 40px;
+        font-weight: 500;
+        padding: 10px 0;
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1190px) {
+  .polishing-wrapper {
+    padding-top: 80px;
+
+    h1 {
+      padding: 5px 0;
+      font-size: 40px;
+    }
+
+    .service-description {
+      max-width: 650px;
+
+      h2 {
+        font-size: 27px;
+      }
+
+      ul {
+
+        li {
+          font-size: 23px;
+          font-weight: 300;
+        }
+      }
+
+      ul li:before {
+        content: " — ";
+      }
+    }
+
+    .classes {
+      padding-top: 50px;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .golf-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 15px;
+      }
+
+      .jetta-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 15px;
+      }
+
+      .touran-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 15px;
+      }
+
+      .tiguran-prices-class {
+        margin: 0 5px;
+        border-radius: 25px;
+        padding: 10px 15px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        padding: 30px 0 70px 0;
+        width: 210px;
+        height: 110px;
+      }
+
+      .jetta {
+        padding: 40px 0 60px 0;
+        width: 210px;
+        height: 100px;
+      }
+
+      .touran {
+        padding: 30px 0 70px 0;
+        width: 210px;
+        height: 120px;
+      }
+
+      .tiguran {
+        padding: 30px 0 70px 0;
+        width: 210px;
+        height: 110px;
+      }
+
+      h4 {
+        font-size: 35px;
+        font-weight: 500;
+        padding: 10px 0;
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .polishing-wrapper {
+    padding-top: 70px;
+
+    h1 {
+      padding: 5px 0;
+      font-size: 40px;
+    }
+
+    .service-description {
+      max-width: 600px;
+      padding: 20px 50px;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      ul {
+
+        li {
+          font-size: 22px;
+          font-weight: 300;
+        }
+      }
+
+      ul li:before {
+        content: " — ";
+      }
+    }
+
+    .classes {
+      padding-top: 20px;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .golf-prices-class {
+        max-width: 280px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      .jetta-prices-class {
+        max-width: 280px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      .touran-prices-class {
+        max-width: 280px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      .tiguran-prices-class {
+        max-width: 280px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        padding: 30px 0 70px 0;
+        width: 280px;
+        height: 150px;
+      }
+
+      .jetta {
+        padding: 40px 0 60px 0;
+        width: 300px;
+        height: 150px;
+      }
+
+      .touran {
+        padding: 30px 0 70px 0;
+        width: 280px;
+        height: 170px;
+      }
+
+      .tiguran {
+        padding: 30px 0 70px 0;
+        width: 290px;
+        height: 170px;
+      }
+
+      h4 {
+        font-size: 45px;
+        font-weight: 500;
+        padding: 10px 0;
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: 767.9px) {
+  .polishing-wrapper {
+    background-image: url('../../../images/bannerServices2.png');
+    padding-top: 100px;
+
+    h1 {
+      padding: 5px 0;
+      font-size: 33px;
+    }
+
+    .service-description {
+      max-width: 450px;
+      padding: 20px;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      ul {
+
+        li {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+
+      ul li:before {
+        content: " — ";
+      }
+    }
+
+    .classes {
+      padding-top: 20px;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .golf-prices-class {
+        background-color: #4d4d4dd9;
+        max-width: 180px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      .jetta-prices-class {
+        background-color: #4d4d4dd9;
+        max-width: 180px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      .touran-prices-class {
+        background-color: #4d4d4dd9;
+        max-width: 180px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      .tiguran-prices-class {
+        background-color: #4d4d4dd9;
+        max-width: 180px;
+        margin: 20px;
+        border-radius: 25px;
+        padding: 10px 25px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 30px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        padding: 30px 0 70px 0;
+        width: 180px;
+        height: 90px;
+      }
+
+      .jetta {
+        padding: 40px 0 60px 0;
+        width: 200px;
+        height: 90px;
+      }
+
+      .touran {
+        padding: 30px 0 70px 0;
+        width: 180px;
+        height: 110px;
+      }
+
+      .tiguran {
+        padding: 30px 0 70px 0;
+        width: 190px;
+        height: 100px;
+      }
+
+      h4 {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px 0;
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+}
+
+@media(max-width: 540px) {
+  .polishing-wrapper {
+    background-image: url('../../../images/bannerServices540.png');
+    padding-top: 100px;
+
+    h1 {
+      padding: 5px 0;
+      font-size: 25px;
+    }
+
+    .service-description {
+      max-width: 370px;
+      padding: 10px;
+      border-radius: 15px;
+      // margin: 10px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      ul {
+
+        li {
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 1.1;
+        }
+      }
+
+      ul li:before {
+        content: " — ";
+      }
+    }
+
+    .classes {
+      padding-top: 20px;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .golf-prices-class {
+        max-width: 110px;
+        min-width: 140px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+
+      .jetta-prices-class {
+        max-width: 110px;
+        min-width: 140px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+
+      .touran-prices-class {
+        max-width: 110px;
+        min-width: 140px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+
+      .tiguran-prices-class {
+        max-width: 110px;
+        min-width: 140px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px 15px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        padding: 10px 0 40px 0;
+        width: 150px;
+        height: 80px;
+      }
+
+      .jetta {
+        padding: 10px 0 40px 0;
+        width: 150px;
+        height: 70px;
+      }
+
+      .touran {
+        padding: 10px 0 40px 0;
+        width: 150px;
+        height: 90px;
+      }
+
+      .tiguran {
+        padding: 10px 0 40px 0;
+        width: 145px;
+        height: 80px;
+      }
+
+      h4 {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 10px 0;
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+}
+
+@media(max-width: 424px) {
+  .polishing-wrapper {
+    background-image: url('../../../images/bannerServices540.png');
+    padding-top: 100px;
+
+    h1 {
+      padding: 5px 0;
+      font-size: 22px;
+      font-weight: 800;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .service-description {
+      max-width: 340px;
+      padding: 10px;
+      border-radius: 15px;
+      // margin: 10px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      ul {
+
+        li {
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 1.1;
+        }
+      }
+
+      ul li:before {
+        content: " — ";
+      }
+    }
+
+    .classes {
+      padding-top: 20px;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .golf-prices-class {
+        max-width: 100px;
+        min-width: 125px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .jetta-prices-class {
+        max-width: 100px;
+        min-width: 125px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .touran-prices-class {
+        max-width: 100px;
+        min-width: 125px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      .tiguran-prices-class {
+        max-width: 100px;
+        min-width: 125px;
+        margin: 20px;
+        border-radius: 15px;
+        padding: 10px;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0 auto;
+        color: #FECE00;
+        text-align: center;
+      }
+
+      .golf {
+        padding: 10px 0 40px 0;
+        width: 130px;
+        height: 70px;
+      }
+
+      .jetta {
+        padding: 10px 0 40px 0;
+        width: 135px;
+        height: 65px;
+      }
+
+      .touran {
+        padding: 10px 0 40px 0;
+        width: 130px;
+        height: 80px;
+      }
+
+      .tiguran {
+        padding: 10px 0 40px 0;
+        width: 130px;
+        height: 73px;
+      }
+
+      h4 {
+        font-size: 21.9px;
+        font-weight: 500;
+        padding: 10px 0;
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+}
